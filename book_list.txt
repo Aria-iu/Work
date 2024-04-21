@@ -1,0 +1,25 @@
+Date：								  4.20	  4.21
+
+Rust Design Paaterns						✔✔	|	|
+
+Data Analysis with Rust Notebooks				✔	|	|
+
+Rust Patterns							✔✔	|	|
+
+Effective Rust							✔	|	|
+
+Rust Essentials								|	|
+
+Hands-On Concurrency with Rust						|	|
+
+Rust High Performance						✔	|  ✔	|
+
+The Little Book of Rust Macros						|  ✔	|
+
+Systems Programming with Rust					✔	|  ✔	|
+
+
+
+读书笔记：
+Rust Macro : https://c03w331xxs3.feishu.cn/wiki/Fnapw361oi6IW5koCXBcvLK0nhg
+Rust Enhancing performance : https://c03w331xxs3.feishu.cn/wiki/I8rowhUVOi5XwYkj7IycqLeTnOd

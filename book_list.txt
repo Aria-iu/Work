@@ -1,22 +1,26 @@
-Date：								  4.20	  4.21
+✔✔表示看完了
+✔表示今天有查看的进度
 
-Rust Design Paaterns						✔✔	|	|
 
-Data Analysis with Rust Notebooks				✔	|	|
+Date：								  4.20	  4.21	  4.22
 
-Rust Patterns							✔✔	|	|
+Rust Design Paaterns						✔✔	|	|	|
 
-Effective Rust							✔	|	|
+Data Analysis with Rust Notebooks				✔	|	|	|
 
-Rust Essentials								|	|
+Rust Patterns							✔✔	|	|	|
 
-Hands-On Concurrency with Rust						|	|
+Effective Rust							✔	|	|	|
 
-Rust High Performance						✔	|  ✔	|
+Rust Essentials								|	|	|
 
-The Little Book of Rust Macros						|  ✔	|
+Hands-On Concurrency with Rust						|	|	|
 
-Systems Programming with Rust					✔	|  ✔	|
+Rust High Performance						✔	|  ✔	|	|
+
+The Little Book of Rust Macros						|  ✔	|  ✔✔	|
+
+Systems Programming with Rust					✔	|  ✔	|	|
 
 
 

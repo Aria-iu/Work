@@ -6,15 +6,15 @@ Date：								  4.20	  4.21	  4.22
 
 Rust Design Paaterns						✔✔	|	|	|
 
-Data Analysis with Rust Notebooks				✔	|	|	|
+Data Analysis with Rust Notebooks				✔	|	|	|很好的实验指导书
 
-Rust Patterns							✔✔	|	|	|
+Rust Patterns							✔✔	|	|	|因为Rust语言的独创性，一些传统的设计模式不需要实现，另一些可能无法实现，所以书中涉及的设计模式很少。
 
 Effective Rust							✔	|	|	|
 
-Rust Essentials								|	|	|
+Rust Essentials								|	|  ✔✔	| 知识点覆盖面广，但是浅尝辄止，建议当作实践大纲看
 
-Hands-On Concurrency with Rust						|	|	|
+Hands-On Concurrency with Rust						|	|	|https://zyc-1.gitbook.io/rust-concurrency/
 
 Rust High Performance						✔	|  ✔	|	|
 

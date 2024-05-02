@@ -1,0 +1,7 @@
+[package]
+name = "catsay-tui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cursive = {path="../cursive0.20.0/cursive",version="0.20.0"}

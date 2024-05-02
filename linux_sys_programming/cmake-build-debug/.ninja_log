@@ -1,0 +1,9 @@
+# ninja log v5
+1	40	1714564823620788529	CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/readv.c.o	cb43b8cba7b0779f
+1	40	1714564823620788529	CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/fcntl_getfl_test.c.o	85e8c5b8944859bc
+1	41	1714564823620788529	CMakeFiles/linux_sys_programming.dir/error_function.c.o	1519aca9cc6e6a38
+1	40	1714564823620788529	CMakeFiles/linux_sys_programming.dir/get_num.c.o	11813d964744b140
+28	42	1714486924666777368	linux_sys_programming	390f71680dbe77f5
+2	40	1714564823620788529	CMakeFiles/linux_sys_programming.dir/sys_test/process_test/mem_segement.c.o	fbede64e1cc65ba7
+1	40	1714564823620788529	CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/copy.c.o	5f1b240a879b7cf4
+0	40	1714564823620788529	CMakeFiles/linux_sys_programming.dir/main.c.o	5aef23a2f2446c4

@@ -13,3 +13,4 @@ def test_10_lines():
         '{ "name": "Tara Patterson", "value": 678175 }',
     ]
     assert main.sum(lines) == 6203958
+    print(main.sun(lines))

@@ -1,0 +1,12 @@
+[package]
+name = "type-name-derive"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.12.10"
+quote = "0.4.2"

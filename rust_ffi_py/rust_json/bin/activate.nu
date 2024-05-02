@@ -1,6 +1,6 @@
 # Setting all environment variables for the venv
 let path-name = (if ((sys).host.name == "Windows") { "Path" } { "PATH" })
-let virtual-env = "/home/zyc/code/rust_code/rust_ffi_py/rust_json"
+let virtual-env = "/home/zyc/code/Work/rust_ffi_py/rust_json"
 let bin = "bin"
 let path-sep = ":"
 
@@ -38,4 +38,4 @@ let-env PROMPT_COMMAND = $new_prompt
 # We are using alias as the function definitions because only aliases can be
 # removed from the scope
 alias pydoc = python -m pydoc
-alias deactivate = source "/home/zyc/code/rust_code/rust_ffi_py/rust_json/bin/deactivate.nu"
+alias deactivate = source "/home/zyc/code/Work/rust_ffi_py/rust_json/bin/deactivate.nu"

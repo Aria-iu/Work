@@ -1,0 +1,3 @@
+[workspace]
+
+members = ["cursive", "cursive-core", "cursive-syntect"]

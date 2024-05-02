@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/zyc/code/Work/web_warp/target/debug/build/typenum-c608529269c0516e/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/zyc/code/Work/web_warp/target/debug/build/typenum-c608529269c0516e/out/op.rs

@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/home/zyc/code/rust_code/rust_ffi_py/rust_json'
+set -gx VIRTUAL_ENV '/home/zyc/code/Work/rust_ffi_py/rust_json'
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | head -c 1) -lt 3

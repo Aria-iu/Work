@@ -1,0 +1,86 @@
+[package]
+name = "my_tokio_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = {path = "../tokio",version = "1.37.0",features = ["rt","macros","rt-multi-thread","process","io-util"]}
+tokio-stream = {path = "../tokio-stream",version = "0.1.15"}
+
+[build]
+rustflags = ["--cfg", "tokio_unstable", "--cfg", "tokio_taskdump"]
+
+[profile.dev]
+split-debuginfo = "off"
+
+[[bin]]
+name = "join_test"
+path = "./bin/join_test.rs"
+
+[[bin]]
+name = "select_test"
+path = "./bin/select_test.rs"
+
+[[bin]]
+name = "stream_select_test"
+path = "./bin/stream_select_test.rs"
+
+[[bin]]
+name = "pin_test"
+path = "./bin/pin_test.rs"
+
+[[bin]]
+name = "task_local_test"
+path = "./bin/task_local_test.rs"
+
+[[bin]]
+name = "handle_test"
+path = "./bin/handle_test.rs"
+
+[[bin]]
+name = "handle_current_test"
+path = "./bin/handle_current_test.rs"
+
+[[bin]]
+name = "dump_test"
+path = "./bin/dump_test.rs"
+
+[[bin]]
+name = "oneshot_test"
+path = "./bin/sync_test/oneshot_test.rs"
+
+[[bin]]
+name = "mpsc_test"
+path = "./bin/sync_test/mpsc_test.rs"
+
+[[bin]]
+name = "whole_test"
+path = "./bin/sync_test/whole_test.rs"
+
+[[bin]]
+name = "boardcast_test"
+path = "./bin/sync_test/boardcast_test.rs"
+
+[[bin]]
+name = "watchchannel_test"
+path = "./bin/sync_test/watchchannel_test.rs"
+
+[[bin]]
+name = "command_test"
+path = "./bin/process_test/command_test.rs"
+
+[[bin]]
+name = "command_sort_test"
+path = "./bin/process_test/command_sort_test.rs"
+
+[[bin]]
+name = "pipe_line_test"
+path = "./bin/process_test/pipe_line_test.rs"
+
+[[bin]]
+name = "notify_test"
+path = "./bin/sync/notify_test.rs"
+
+[[bin]]
+name = "notify2_test"
+path = "./bin/sync/notify2_test.rs"

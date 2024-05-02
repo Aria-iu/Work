@@ -1,3 +1,3 @@
-/home/zyc/CLionProjects/linux_sys_programming/cmake-build-debug/CMakeFiles/linux_sys_programming.dir
-/home/zyc/CLionProjects/linux_sys_programming/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/zyc/CLionProjects/linux_sys_programming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zyc/code/Work/linux_sys_programming/cmake-build-debug/CMakeFiles/linux_sys_programming.dir
+/home/zyc/code/Work/linux_sys_programming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zyc/code/Work/linux_sys_programming/cmake-build-debug/CMakeFiles/rebuild_cache.dir

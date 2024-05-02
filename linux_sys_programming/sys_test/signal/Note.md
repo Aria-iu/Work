@@ -189,3 +189,87 @@ int pause(void);
 
 在int_quit.c中，使用了pause()来等待信号。
 
+## 
+**不会对信号进行排队处理。在处理器函数执行期间，如果多次产生同类信号，那么仍然会将其标记
+为等待状态，但稍后只会传递一次。
+信号的这种“失踪”方式无疑将影响对信号处理器函数的设计。首先，无法对信号的产
+生次数进行可靠计数。其次，在为信号处理器函数编码时可能需要考虑处理同类信号多次产
+生的情况。**
+
+### 可重入函数和异步信号安全函数
+如果同一个进程的多条线程可以同时安全地调用某一函数，那么该函数就是可重入的。
+此处，“安全”意味着，无论其他线程调用该函数的执行状态如何，函数均可产生预期结果。
+
+更新全局变量或静态数据结构的函数可能是不可重入的。只用到本地变量的函数肯定是可重入的。
+如果对函数的两个调用（例如：分别由两条执行线程发起）同时试图更新同一全局变
+量或数据类型，那么二者很可能会相互干扰并产生不正确的结果。
+
+### 标准的异步信号安全函数
+异步信号安全的函数是指当从信号处理器函数调用时，可以保证其实现是安全的。如
+果某一函数是可重入的，又或者信号处理器函数无法将其中断时，就称该函数是异步信号安全的。
+
+### 全局变量和 sig_atomic_t 数据类型
+信号处理器函数可能会随时修改全局变量—只要主程序能够正确处理这种可能性，共享全局变
+量就是安全的。
+
+如果使用 longjmp()来退出信号处理器函数，那么信号掩码会发生什么情况呢？这取决于
+特定 UNIX 实现的血统。在 System V 一脉中，longjmp()不会将信号掩码恢复，亦即在离开处
+理器函数时不会对遭阻塞的信号解除阻塞。
+
+鉴于两大 UNIX 流派之间的差异，POSIX.1-1990 选择不对 setjmp()和 longjmp()的信号掩
+码处理进行规范，而是定义了一对新函数：sigsetjmp()和 siglongjmp()，针对执行非本地跳转
+时的信号掩码进行显式控制。
+```c
+#include <setjmp.h>
+int sigsetjmp(sigjmp_buf env,int savesigs);
+void siglongjmp(sigjmp_buf env,int val);
+```
+
+## SA_SIGINFO 标志
+如果在使用 sigaction()创建处理器函数时设置了 SA_SIGINFO 标志，那么在收到信号时处
+理器函数可以获取该信号的一些附加信息。为获取这一信息，需要将处理器函数声明如下：
+```c
+void handler(int sig,siginfo_t *siginfo,void *ucontext);
+```
+### 结构 siginfo_t
+在以 SA_SIGINFO 标志创建的信号处理器函数中，结构 siginfo_t 是其第 2 个参数
+![img_2.png](img_2.png)
+### 参数 ucontext
+以 SA_SIGINFO 标志所创建的信号处理器函数，其最后一个参数是 ucontext，一个指向
+ucontext_t 类型结构（定义于<ucontext.h>）的指针。
+
+该结构提供了所谓的用户上下文信息，用于描述调用
+信号处理器函数前的进程状态，其中包括上一个进程信号掩码以及寄存器的保存值，例如程
+序计数器（cp）和栈指针寄存器（sp）。
+
+## 系统调用的中断和重启
+在 Linux 中，如果采用 SA_RESTART 标志来创建系统处理器函数，则如下阻塞的系统调用
+（以及构建于其上的库函数）在遭到中断时是可以自动重启的。
+- 用来等待子进程（26.1 节）的系统调用：wait()、waitpid()、wait3()、wait4()和 waitid()。
+- 访问慢速设备时的 I/O 系统调用：read()、readv()、write()、writev()和 ioctl()。如果在
+收到信号时已经传递了部分数据，那么还是会中断输入输出系统调用，但会返回成功
+状态：一个整型值，表示已成功传递数据的字节数。
+- 系统调用 open()，在可能阻塞的情况下（例如，如 44.7 节所述，在打开 FIFO 时）。
+- 用于套接字的各种系统调用：accept()、accept4()、connect()、send()、sendmsg()、sendto()、
+recv()、recvfrom()和 recvmsg()。
+（在 Linux 中，如果使用 setsockopt()来设置超时，这
+些系统调用就不会自动重启。更多细节请参考 signal(7)手册页。）
+- 对 POSIX 消息队列进行 I/O 操作的系统调用：mq_receive()、mq_timedreceive()、
+mq_send()和 mq_timedsend()。
+- 用于设置文件锁的系统调用和库函数：flock()、fcntl()和 lockf()。
+- Linux 特有系统调用 futex()的 FUTEX_WAIT 操作。
+- 用于递减 POSIX 信号量的 sem_wait()和 sem_timedwait()函数。
+（在一些 UNIX 实现上，
+如果设置了 SA_RESTART 标志，sem_wait()就会重启。）
+- 用于同步 POSIX 线程的函数：pthread_mutex_lock()、pthread_mutex_trylock()、pthread_
+mutex_timedlock()、pthread_cond_wait()和 pthread_cond_timedwait()。
+
+### 为信号修改 SA_RESTART 标志
+函数 siginterrupt()用于改变信号的 SA_RESTART 设置
+```c
+#include <setjmp.h>
+int siginterrupt(int sig,int flag);
+```
+若参数 flag 为真（1），则针对信号 sig 的处理器函数将会中断阻塞的系统调用的执行。如
+果 flag 为假（0），那么在执行了 sig 的处理器函数之后，会自动重启阻塞的系统调用。
+

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/zyc/CLionProjects/linux_sys_programming/cmake-build-debug"
+			"value" : "/home/zyc/code/Work/linux_sys_programming/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -415,7 +415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/zyc/CLionProjects/linux_sys_programming/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/zyc/code/Work/linux_sys_programming/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/zyc/CLionProjects/linux_sys_programming"
+			"value" : "/home/zyc/code/Work/linux_sys_programming"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/zyc/CLionProjects/linux_sys_programming/cmake-build-debug"
+			"value" : "/home/zyc/code/Work/linux_sys_programming/cmake-build-debug"
 		},
 		{
 			"name" : "linux_sys_programming_IS_TOP_LEVEL",
@@ -1059,7 +1059,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/zyc/CLionProjects/linux_sys_programming"
+			"value" : "/home/zyc/code/Work/linux_sys_programming"
 		}
 	],
 	"kind" : "cache",

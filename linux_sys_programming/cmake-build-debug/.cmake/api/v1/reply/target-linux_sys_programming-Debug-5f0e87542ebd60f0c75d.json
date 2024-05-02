@@ -70,7 +70,8 @@
 				20,
 				22,
 				23,
-				24
+				24,
+				25
 			]
 		}
 	],
@@ -124,7 +125,8 @@
 				20,
 				22,
 				23,
-				24
+				24,
+				25
 			]
 		},
 		{
@@ -284,6 +286,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "sys_test/signal/sig_receiver.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sys_test/signal/sigmask_longjmp.c",
 			"sourceGroupIndex" : 0
 		}
 	],

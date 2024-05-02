@@ -27,4 +27,5 @@ add_executable(linux_sys_programming main.c
         sys_test/signal/sig_functions.h
         sys_test/signal/sig_functions.c
         sys_test/signal/sig_sender.c
-        sys_test/signal/sig_receiver.c)
+        sys_test/signal/sig_receiver.c
+        sys_test/signal/sigmask_longjmp.c)

@@ -187,6 +187,54 @@ build CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigmask_longjmp.c.o: 
   OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
   OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/signal
 
+build CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigwaitinfo.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/signal/sigwaitinfo.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigwaitinfo.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/signal
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_queue.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/signal/sig_queue.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_queue.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/signal
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/signal/signalfd_sigval.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/signal/signalfd_sigval.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/signal/signalfd_sigval.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/signal
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/timer/real_timer.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/timer/real_timer.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/timer/real_timer.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/timer
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/timer/timed_read.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/timer/timed_read.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/timer/timed_read.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/timer
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/timer/nanosleep.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/timer/nanosleep.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/timer/nanosleep.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/timer
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/timer/ptmr_sigev_thread.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/timer/ptmr_sigev_thread.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/timer/ptmr_sigev_thread.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/timer
+
+build CMakeFiles/linux_sys_programming.dir/sys_test/timer/timerfd.c.o: C_COMPILER__linux_sys_programming_unscanned_Debug /home/zyc/code/Work/linux_sys_programming/sys_test/timer/timerfd.c || cmake_object_order_depends_target_linux_sys_programming
+  DEP_FILE = CMakeFiles/linux_sys_programming.dir/sys_test/timer/timerfd.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles/linux_sys_programming.dir/sys_test/timer
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target linux_sys_programming
@@ -195,7 +243,7 @@ build CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigmask_longjmp.c.o: 
 #############################################
 # Link the executable linux_sys_programming
 
-build linux_sys_programming: C_EXECUTABLE_LINKER__linux_sys_programming_Debug CMakeFiles/linux_sys_programming.dir/main.c.o CMakeFiles/linux_sys_programming.dir/error_function.c.o CMakeFiles/linux_sys_programming.dir/get_num.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/copy.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/fcntl_getfl_test.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/readv.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/mem_segement.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/display_env.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/long_jmp.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/set_jump_vars.c.o CMakeFiles/linux_sys_programming.dir/sys_test/mem_test/free_and_sbrk.c.o CMakeFiles/linux_sys_programming.dir/sys_test/user_group/check_passwd.c.o CMakeFiles/linux_sys_programming.dir/sys_test/sys_config_test/sys_conf.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_buf_test/direct_read.c.o CMakeFiles/linux_sys_programming.dir/sys_test/dirctory_and_link/unlink.c.o CMakeFiles/linux_sys_programming.dir/sys_test/dirctory_and_link/nftw_dir_tree.c.o CMakeFiles/linux_sys_programming.dir/sys_test/inotify/demo_inotify.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/ouch.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/int_quit.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_functions.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_sender.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_receiver.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigmask_longjmp.c.o
+build linux_sys_programming: C_EXECUTABLE_LINKER__linux_sys_programming_Debug CMakeFiles/linux_sys_programming.dir/main.c.o CMakeFiles/linux_sys_programming.dir/error_function.c.o CMakeFiles/linux_sys_programming.dir/get_num.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/copy.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/fcntl_getfl_test.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_test/readv.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/mem_segement.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/display_env.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/long_jmp.c.o CMakeFiles/linux_sys_programming.dir/sys_test/process_test/set_jump_vars.c.o CMakeFiles/linux_sys_programming.dir/sys_test/mem_test/free_and_sbrk.c.o CMakeFiles/linux_sys_programming.dir/sys_test/user_group/check_passwd.c.o CMakeFiles/linux_sys_programming.dir/sys_test/sys_config_test/sys_conf.c.o CMakeFiles/linux_sys_programming.dir/sys_test/file_io_buf_test/direct_read.c.o CMakeFiles/linux_sys_programming.dir/sys_test/dirctory_and_link/unlink.c.o CMakeFiles/linux_sys_programming.dir/sys_test/dirctory_and_link/nftw_dir_tree.c.o CMakeFiles/linux_sys_programming.dir/sys_test/inotify/demo_inotify.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/ouch.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/int_quit.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_functions.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_sender.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_receiver.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigmask_longjmp.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sigwaitinfo.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/sig_queue.c.o CMakeFiles/linux_sys_programming.dir/sys_test/signal/signalfd_sigval.c.o CMakeFiles/linux_sys_programming.dir/sys_test/timer/real_timer.c.o CMakeFiles/linux_sys_programming.dir/sys_test/timer/timed_read.c.o CMakeFiles/linux_sys_programming.dir/sys_test/timer/nanosleep.c.o CMakeFiles/linux_sys_programming.dir/sys_test/timer/ptmr_sigev_thread.c.o CMakeFiles/linux_sys_programming.dir/sys_test/timer/timerfd.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/linux_sys_programming.dir
   POST_BUILD = :

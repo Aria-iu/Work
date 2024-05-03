@@ -273,3 +273,20 @@ int siginterrupt(int sig,int flag);
 若参数 flag 为真（1），则针对信号 sig 的处理器函数将会中断阻塞的系统调用的执行。如
 果 flag 为假（0），那么在执行了 sig 的处理器函数之后，会自动重启阻塞的系统调用。
 
+## 以同步方式等待信号
+如何结合信号处理器和 sigsuspend()来挂起一个进程的执行，直至传来一个
+信号。然而，这需要编写信号处理器函数，还需要应对信号异步传递所带来的复杂性。对于
+某些应用而言，这种方法过于繁复。作为替代方案，可以利用 sigwaitinfo()系统调用来同步接
+收信号。
+
+```c
+#include <signal.h>
+int sigwaitinfo(const sigset_t *set,siginfo_t *info);
+```
+
+
+## 
+某些信号会引发进程创建一个核心转储文件，并终止进程。核心转储所包含的信息可供
+调试器检查进程终止时的状态。默认情况下，对核心转储文件的命名为 core，但 Linux 提供了
+/proc/sys/kernel/core_pattern 文件来控制对核心转储文件的命名。
+

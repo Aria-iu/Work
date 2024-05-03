@@ -28,4 +28,26 @@ add_executable(linux_sys_programming main.c
         sys_test/signal/sig_functions.c
         sys_test/signal/sig_sender.c
         sys_test/signal/sig_receiver.c
-        sys_test/signal/sigmask_longjmp.c)
+        sys_test/signal/sigmask_longjmp.c
+        sys_test/signal/sigwaitinfo.c
+        sys_test/signal/sig_queue.c
+        sys_test/signal/signalfd_sigval.c
+        sys_test/timer/real_timer.c
+        sys_test/timer/timed_read.c
+        sys_test/timer/nanosleep.c
+        sys_test/timer/ptmr_sigev_thread.c
+        sys_test/timer/timerfd.c
+        ../../../../../itimerspec_from_str.c
+        vfork.c
+        vfork.c
+        vfork.c
+        vfork.c
+        vfork.c
+        make_zombie.c
+        account_on.c
+        acct_view.c
+        sys_test/thread/simpl_thread.c
+        sys_test/thread/simpl_thread.c
+        sys_test/thread/thread_cancel.c
+        sys_test/thread/thread_sig_test.c
+        sys_test/thread/thread_sig_test2.c)

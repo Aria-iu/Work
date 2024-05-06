@@ -50,4 +50,10 @@ add_executable(linux_sys_programming main.c
         sys_test/thread/simpl_thread.c
         sys_test/thread/thread_cancel.c
         sys_test/thread/thread_sig_test.c
-        sys_test/thread/thread_sig_test2.c)
+        sys_test/thread/thread_sig_test2.c
+        sys_test/daemons/syslog.c
+        sys_test/loginacct/dump_utmpx.c
+        sys_test/pipe/simple_pipe.c
+        sys_test/pipe/simple_pipe.c
+        sys_test/pipe/simple_pipe.c
+        sys_test/pipe/pipe_sync.c)

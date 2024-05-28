@@ -1,7 +1,7 @@
 //
 // Created by zyc on 24-5-2.
 //
-
+#include <sys/mman.h>
 #include <signal.h>
 #include <unistd.h>
 #include "../total.h"

@@ -56,4 +56,7 @@ add_executable(linux_sys_programming main.c
         sys_test/pipe/simple_pipe.c
         sys_test/pipe/simple_pipe.c
         sys_test/pipe/simple_pipe.c
-        sys_test/pipe/pipe_sync.c)
+        sys_test/pipe/pipe_sync.c
+        sys_test/pipe/pipe_ls_wc.c
+        sys_test/pipe/popen_glob.c
+        sys_test/pipe/print_wait_status.h)

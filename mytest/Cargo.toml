@@ -16,3 +16,61 @@ type-name-derive = { path = "./type-name-derive" }
 [[bench]]
 name = "example"
 harness = false
+
+[[bin]]
+name = "2a"
+path = "./test/2a.rs"
+
+[[bin]]
+name = "2b"
+path = "./test/2b.rs"
+
+
+[[bin]]
+name = "1972a"
+path = "./test/1972a.rs"
+
+[[bin]]
+name = "103687a"
+path = "./test/103687a.rs"
+
+[[bin]]
+name = "3c"
+path = "./test/3c.rs"
+
+[[bin]]
+name = "4d"
+path = "./test/4d.rs"
+
+[[bin]]
+name = "7b"
+path = "./test/7b.rs"
+
+
+[[bin]]
+name = "7c"
+path = "./test/7c.rs"
+
+[[bin]]
+name = "11b"
+path = "test/11b.rs"
+
+[[bin]]
+name = "14c"
+path = "test/14c.rs"
+
+[[bin]]
+name = "1974a"
+path = "test/1974a.rs"
+
+[[bin]]
+name = "1974b"
+path = "test/1974b.rs"
+
+[[bin]]
+name = "1974c_error"
+path = "test/1974c_runtime_error.rs"
+
+[[bin]]
+name = "1974c"
+path = "test/1974c.rs"

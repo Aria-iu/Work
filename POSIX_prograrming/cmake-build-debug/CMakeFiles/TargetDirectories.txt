@@ -1,0 +1,3 @@
+/home/zyc/code/Work/POSIX_prograrming/cmake-build-debug/CMakeFiles/POSIX_prograrming.dir
+/home/zyc/code/Work/POSIX_prograrming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zyc/code/Work/POSIX_prograrming/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -139,5 +139,17 @@ mod tests {
         println!("{:?}", alice);
     }
 
+    #[test]
+    fn just_test(){
+        let s = String::from("hello");
+        //let s2;
+        let b = false;
+        if b{
+            let s2 = s;
+        }else{
+            println!("{}",s);
+        }
+
+    }
 }
 

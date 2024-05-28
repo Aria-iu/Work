@@ -1,0 +1,10 @@
+# ninja log v5
+34	59	1715569357549603829	POSIX_prograrming	7fabbeffe58b4537
+1	27	1715164758634254795	CMakeFiles/POSIX_prograrming.dir/POSIX/P_trace.c.o	8542d0c3e730e222
+1	30	1715166570139441164	CMakeFiles/POSIX_prograrming.dir/POSIX/P_locale.c.o	9e8e60dfcd3a2b20
+1	22	1715569911777565593	CMakeFiles/POSIX_prograrming.dir/main.c.o	23ae0c59169f00d7
+1	22	1715569911777565593	CMakeFiles/POSIX_prograrming.dir/POSIX/print_epoch.c.o	5483c2bce26e5e39
+2	22	1715569911781563741	CMakeFiles/POSIX_prograrming.dir/POSIX/P_a64l.c.o	87eda57a972b6fe8
+1	23	1715569911785561889	CMakeFiles/POSIX_prograrming.dir/POSIX/P_tar.c.o	a8da78f918287c4a
+0	31	1715570090705534824	build.ninja	3f5e9a43908181e9
+0	17	1715570090729535882	POSIX_prograrming	7555488e5ddf3c47

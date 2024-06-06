@@ -1,0 +1,5 @@
+[workspace]
+resolver = "2"
+members = [
+    "system_math_example"
+, "system_link_test"]

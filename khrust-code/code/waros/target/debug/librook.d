@@ -1,0 +1,1 @@
+/home/zyc/code/khrust-code/code/waros/target/debug/librook.so: /home/zyc/code/khrust-code/code/waros/rook/src/lib.rs /home/zyc/code/khrust-code/code/waros/warsdk/src/ffi.rs /home/zyc/code/khrust-code/code/waros/warsdk/src/lib.rs

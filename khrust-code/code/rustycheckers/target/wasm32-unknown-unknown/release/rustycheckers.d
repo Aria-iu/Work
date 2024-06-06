@@ -1,0 +1,1 @@
+/home/zyc/code/khrust-code/code/rustycheckers/target/wasm32-unknown-unknown/release/rustycheckers.wasm: /home/zyc/code/khrust-code/code/rustycheckers/src/board.rs /home/zyc/code/khrust-code/code/rustycheckers/src/game.rs /home/zyc/code/khrust-code/code/rustycheckers/src/lib.rs

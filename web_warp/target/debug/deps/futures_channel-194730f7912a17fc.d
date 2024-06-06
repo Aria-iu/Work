@@ -1,0 +1,10 @@
+/home/zyc/code/Work/web_warp/target/debug/deps/libfutures_channel-194730f7912a17fc.rmeta: /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/lib.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/lock.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/mod.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/queue.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/sink_impl.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/oneshot.rs
+
+/home/zyc/code/Work/web_warp/target/debug/deps/futures_channel-194730f7912a17fc.d: /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/lib.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/lock.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/mod.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/queue.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/sink_impl.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/oneshot.rs
+
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/lib.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/lock.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/mod.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/queue.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/mpsc/sink_impl.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.14/src/oneshot.rs:

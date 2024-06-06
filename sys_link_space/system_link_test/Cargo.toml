@@ -1,0 +1,7 @@
+[package]
+name = "system_link_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+system_math_example={path="../system_math_example/"}

@@ -1,0 +1,12 @@
+/home/zyc/code/Work/mytest/target/debug/deps/libsimplelog-7b64435658f72e7c.rmeta: /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/lib.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/config.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/mod.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/simplelog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/termlog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/writelog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/comblog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/logging.rs
+
+/home/zyc/code/Work/mytest/target/debug/deps/simplelog-7b64435658f72e7c.d: /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/lib.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/config.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/mod.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/simplelog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/termlog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/writelog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/comblog.rs /home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/logging.rs
+
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/lib.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/config.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/mod.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/simplelog.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/termlog.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/writelog.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/comblog.rs:
+/home/zyc/.cargo/registry/src/index.crates.io-6f17d22bba15001f/simplelog-0.4.4/src/loggers/logging.rs:

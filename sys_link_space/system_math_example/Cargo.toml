@@ -1,0 +1,15 @@
+[package]
+name = "system_math_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name="system_math_example"
+crate-type=["rlib"]
+
+[package.metadata]
+[package.metadata.link]
+name="m"
+kind="rlib"

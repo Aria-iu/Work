@@ -11,6 +11,7 @@ log = "0.3.9"
 env_logger = "0.11.3"
 mio = { path = "../mio-0.8.11", version = "0.8.11", features = ["net", "os-poll"] }
 type-name-derive = { path = "./type-name-derive" }
+cargo_metadata = "0.18.1"
 
 
 [[bench]]
@@ -74,3 +75,19 @@ path = "test/1974c_runtime_error.rs"
 [[bin]]
 name = "1974c"
 path = "test/1974c.rs"
+
+[[bin]]
+name = "lifetime1"
+path = "test/lifetime/1.rs"
+
+[[bin]]
+name = "reborrow"
+path = "test/lifetime/2.rs"
+
+[[bin]]
+name = "lifetime2"
+path = "test/lifetime/3.rs"
+
+[[bin]]
+name = "lifetime3"
+path = "test/lifetime/4.rs"

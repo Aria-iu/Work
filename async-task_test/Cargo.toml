@@ -1,0 +1,9 @@
+[package]
+name = "async-task_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-task = "4.7"
+flume = "0.11.0"
+futures = "0.3"

@@ -9,7 +9,7 @@ fn main() {
 
     let n: i32 = input.trim().parse().unwrap();
 
-    for _ in 0..n{
+    for _ in 0..n {
         let mut input = String::new();
         stdin()
             .read_line(&mut input)
@@ -19,28 +19,26 @@ fn main() {
         let a = input[0].parse::<i32>().unwrap();
         let b = input[1].parse::<i32>().unwrap();
 
-        if a==b {
+        if a == b {
             println!("0");
-        }else if a<b {
-            let d = b-a;
-            if d%2 == 0 {
-                if (d/2)%2==1{
+        } else if a < b {
+            let d = b - a;
+            if d % 2 == 0 {
+                if (d / 2) % 2 == 1 {
                     println!("2");
-                }else{
+                } else {
                     println!("3");
                 }
-            }else{
+            } else {
                 println!("1");
             }
-        }else{
-            let d = a-b;
-            if d%2==1{
+        } else {
+            let d = a - b;
+            if d % 2 == 1 {
                 println!("2");
-            }else{
+            } else {
                 println!("1");
             }
         }
-
     }
-
 }

@@ -13,14 +13,20 @@ pub struct Writer<'a> {
 }
 
 impl<'a> Writer<'a> {
-    fn indent<'b>(&'b mut self) -> Writer<'b> where 'a:'b{
+    fn indent<'b>(&'b mut self) -> Writer<'b>
+    where
+        'a: 'b,
+    {
         Writer {
             target: self.target,
             indent: self.indent + 1,
         }
     }
 
-    fn write<'b>(&'b mut self, s: &'b str)where 'a:'b {
+    fn write<'b>(&'b mut self, s: &'b str)
+    where
+        'a: 'b,
+    {
         for _ in 0..self.indent {
             self.target.push(' ');
         }

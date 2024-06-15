@@ -9,7 +9,7 @@ fn main() {
 
     let n: i32 = input.trim().parse().unwrap();
 
-    for _ in 0..n{
+    for _ in 0..n {
         let mut input = String::new();
         stdin()
             .read_line(&mut input)
@@ -22,33 +22,30 @@ fn main() {
 
         let mut ret = 0;
         let mut screens = 0;
-        if y%2==0{
-            ret = y/2;
+        if y % 2 == 0 {
+            ret = y / 2;
             screens = ret;
-            while x>0&&screens>0{
-                screens-=1;
-                x-=7;
+            while x > 0 && screens > 0 {
+                screens -= 1;
+                x -= 7;
             }
-            while x>0{
-                x-=15;
-                ret+=1;
+            while x > 0 {
+                x -= 15;
+                ret += 1;
             }
-        }else{
-            ret = y/2+1;
+        } else {
+            ret = y / 2 + 1;
             screens = ret;
-            let mut left = x-screens*7-4;
-            if left<=0{
-
-            }else{
-                while left>0 {
-                    left-=15;
-                    ret+=1;
+            let mut left = x - screens * 7 - 4;
+            if left <= 0 {
+            } else {
+                while left > 0 {
+                    left -= 15;
+                    ret += 1;
                 }
             }
         }
 
-
-        println!("{}",ret);
+        println!("{}", ret);
     }
-
 }

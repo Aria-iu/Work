@@ -1,10 +1,10 @@
 use std::io::stdin;
 
-struct Point{
+struct Point {
     x: i32,
     y: i32,
 }
-struct Line{
+struct Line {
     p1: Point,
     p2: Point,
 }
@@ -16,10 +16,10 @@ impl Line {
         dx * dx + dy * dy
     }
 
-    fn is_vertical_x(&self)->bool{
+    fn is_vertical_x(&self) -> bool {
         self.p1.x == self.p2.x
     }
-    fn is_vertical_y(&self)->bool{
+    fn is_vertical_y(&self) -> bool {
         self.p1.y == self.p2.y
     }
     // 计算向量
@@ -27,8 +27,8 @@ impl Line {
         (self.p2.x - self.p1.x, self.p2.y - self.p1.y)
     }
 
-    fn is_satisfy(&self) -> bool{
-        self.p1.x==self.p2.x||self.p1.y==self.p2.y
+    fn is_satisfy(&self) -> bool {
+        self.p1.x == self.p2.x || self.p1.y == self.p2.y
     }
 
     // 判断两条线段是否垂直
@@ -41,10 +41,9 @@ impl Line {
 }
 
 fn main() {
-
     let mut L = Vec::new();
 
-    for i in 0..4{
+    for i in 0..4 {
         let mut input = String::new();
         stdin()
             .read_line(&mut input)
@@ -55,18 +54,15 @@ fn main() {
         let temp_y1 = input[1].parse::<i32>().unwrap();
         let temp_x2 = input[2].parse::<i32>().unwrap();
         let temp_y2 = input[3].parse::<i32>().unwrap();
-        let p1 = Point{
+        let p1 = Point {
             x: temp_x1,
             y: temp_y1,
         };
-        let p2 = Point{
+        let p2 = Point {
             x: temp_x2,
             y: temp_y2,
         };
-        let t_L = Line{
-            p1,
-            p2,
-        };
+        let t_L = Line { p1, p2 };
         L.push(t_L);
     }
 
@@ -76,16 +72,22 @@ fn main() {
     let l4 = L.get(3).unwrap();
     {
         // 边不为0,且两两长度相等
-        if l1.length_squared()==0||l2.length_squared()==0||l3.length_squared()==0||l4.length_squared()==0{
+        if l1.length_squared() == 0
+            || l2.length_squared() == 0
+            || l3.length_squared() == 0
+            || l4.length_squared() == 0
+        {
             println!("NO");
             return;
         }
-        if (l1.length_squared()==l2.length_squared()&&l3.length_squared()==l4.length_squared())
-            ||(l1.length_squared()==l3.length_squared()&&l2.length_squared()==l4.length_squared())
-            || (l1.length_squared()==l4.length_squared()&&l2.length_squared()==l3.length_squared())
+        if (l1.length_squared() == l2.length_squared()
+            && l3.length_squared() == l4.length_squared())
+            || (l1.length_squared() == l3.length_squared()
+                && l2.length_squared() == l4.length_squared())
+            || (l1.length_squared() == l4.length_squared()
+                && l2.length_squared() == l3.length_squared())
         {
-
-        }else{
+        } else {
             println!("NO");
             return;
         }
@@ -104,14 +106,13 @@ fn main() {
                 }
             }
         }
-        if cnt_x == 2 && cnt_y == 2 {} else {
+        if cnt_x == 2 && cnt_y == 2 {
+        } else {
             println!("NO");
             return;
         }
     }
 
     // 检查4条边是否满足一个矩形。
-    {
-
-    }
+    {}
 }

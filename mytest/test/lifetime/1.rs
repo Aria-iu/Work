@@ -1,15 +1,15 @@
-struct Interface<'b,'a:'b > {
-    manager: &'b mut Manager<'a>
+struct Interface<'b, 'a: 'b> {
+    manager: &'b mut Manager<'a>,
 }
 
-impl<'b, 'a:'b > Interface<'b,'a > {
+impl<'b, 'a: 'b> Interface<'b, 'a> {
     pub fn noop(self) {
         println!("interface consumed");
     }
 }
 
 struct Manager<'a> {
-    text: &'a str
+    text: &'a str,
 }
 
 struct List<'a> {
@@ -17,10 +17,12 @@ struct List<'a> {
 }
 
 impl<'a> List<'a> {
-    pub fn get_interface<'b>(&'b mut self) -> Interface<'b,'a> 
-    where 'a:'b{
+    pub fn get_interface<'b>(&'b mut self) -> Interface<'b, 'a>
+    where
+        'a: 'b,
+    {
         Interface {
-            manager: &mut self.manager
+            manager: &mut self.manager,
         }
     }
 }
@@ -31,9 +33,7 @@ fn use_list(list: &List) {
 
 fn main() {
     let mut list = List {
-        manager: Manager {
-            text: "hello"
-        }
+        manager: Manager { text: "hello" },
     };
 
     list.get_interface().noop();
@@ -42,4 +42,3 @@ fn main() {
 
     use_list(&list);
 }
-

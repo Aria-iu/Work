@@ -1,0 +1,8 @@
+[package]
+name = "blocking_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+blocking = "1.6"
+futures = "0.3.30"

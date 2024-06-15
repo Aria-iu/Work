@@ -35,13 +35,12 @@ fn main() {
                 score.push(val);
             }
             ns_map.insert(name.clone(), score);
-            for (t_name,t_score) in &mut ns_map{
+            for (t_name, t_score) in &mut ns_map {
                 if *t_name != name {
                     let num = t_score.last().unwrap() + 0;
                     t_score.push(num);
                 }
             }
-
         } else {
             for (t_name, score) in &mut ns_map {
                 if *t_name != name {
@@ -57,24 +56,24 @@ fn main() {
 
     let mut max = 0;
     let mut pres = Vec::new();
-    for (_,score) in &ns_map{
+    for (_, score) in &ns_map {
         let t = score.last().unwrap();
-        if *t > max{
+        if *t > max {
             max = *t;
         }
     }
-    for (name,score) in &ns_map{
+    for (name, score) in &ns_map {
         let t = score.last().unwrap();
-        if *t ==  max{
+        if *t == max {
             pres.push(name);
         }
     }
-'outer: for i in 0..n{
-        for j in &pres{
+    'outer: for i in 0..n {
+        for j in &pres {
             let temp = ns_map.get(*j).unwrap();
             let num = temp.get(i as usize).unwrap();
-            if *num >= max{
-                print!("{}",j);
+            if *num >= max {
+                print!("{}", j);
                 break 'outer;
             }
         }

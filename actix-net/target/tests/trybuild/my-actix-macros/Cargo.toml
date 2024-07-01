@@ -1,0 +1,45 @@
+[package]
+name = "my-actix-macros-tests"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.futures-util]
+version = "0.3.17"
+default-features = false
+
+[dependencies.my-actix-macros]
+path = "/home/zyc/code/Work/my-actix-net/my-actix-macros/"
+default-features = false
+
+[dependencies.my-actix-rt]
+path = "/home/zyc/code/Work/my-actix-net/my-actix-macros/../my-actix-rt/"
+
+[dependencies.quote]
+version = "1"
+
+[dependencies.rustversion-msrv]
+version = "0.99"
+
+[dependencies.syn]
+version = "2"
+features = ["full"]
+
+[target."cfg(any())".dependencies.proc-macro2]
+version = "1.0.60"
+
+[[bin]]
+name = "my-actix-macros-tests"
+path = "main.rs"
+
+[[bin]]
+name = "trybuild000"
+path = "/home/zyc/code/Work/my-actix-net/my-actix-macros/tests/trybuild/main-01-basic.rs"
+
+[workspace]
+
+[patch.crates-io.my-actix-macros]
+path = "/home/zyc/code/Work/my-actix-net/my-actix-macros"
+
+[patch.crates-io.my-actix-rt]
+path = "/home/zyc/code/Work/my-actix-net/my-actix-rt"

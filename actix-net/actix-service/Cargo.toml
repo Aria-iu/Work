@@ -1,0 +1,13 @@
+[package]
+name = "actix-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures-core = { version = "0.3.17", default-features = false }
+paste = "1"
+pin-project-lite = "0.2"
+
+[dev-dependencies]
+actix-rt = {path = "../actix-rt"}
+actix-macros = {path = "../actix-macros"}

@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+	"actix-rt",
+	"actix-macros",
+	"actix-service",
+]
+
+
+[patch.crates-io]
+actix-macros = { path = "actix-macros" }
+actix-rt = { path = "actix-rt" }
+actix-service = {path = "actix-service"}
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1

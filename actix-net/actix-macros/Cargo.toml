@@ -1,0 +1,27 @@
+[package]
+name = "actix-macros"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.cargo-machete]
+ignored = [
+    "proc_macro2", # specified for minimal versions compat
+]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = { version = "2", features = ["full"] }
+
+
+# minimal versions compat
+[target.'cfg(any())'.dependencies]
+proc-macro2 = "1.0.60"
+
+[dev-dependencies]
+actix-rt = {path = "../actix-rt"}
+futures-util = { version = "0.3.17", default-features = false }
+rustversion-msrv = "0.99"
+trybuild = "1"
